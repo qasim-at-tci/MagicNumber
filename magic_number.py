@@ -1,22 +1,20 @@
-from builtins import input			# for handling user input gracefully in Python 2 & 3
+from builtins import input
 
 #!/usr/bin/env Python3
 # Python 2 & 3
 
 """
-Program generates a random number between 1 and 100, inclusive. User has five attempts to correctly guess the number.
+Program generates a random number between 1 and 100, inclusive.
+User has five attempts to correctly guess the number.
 """
 
-# Import Python module
-import random					# for "magic" number generation
+import random
 
-# Define variable
-MAX_ATTEMPTS = 5				# maximum number of guesses
+MAX_ATTEMPTS = 5
 
-# Define functions
 def num_gen():
 	"""
-	Return random number between 1 and 100, inclusive.
+	Return random number between 1 and 100, inclusive
 	"""
 	return random.randint(1, 100)
 
@@ -32,14 +30,14 @@ def user_guess():
 			print('Sorry, try again.')
 
 def play_again():
-        """
-        Prompt user for Y/N input.
+    """
+    Prompt user for Y/N input.
 	Return y or n.
-        """
-        while True:
-                again = input('Play again? Y/N:  ').lower()
-                if again == 'y' or again == 'n':
-                        return again
+    """
+    while True:
+            again = input('Play again? Y/N:  ').lower()
+            if again == 'y' or again == 'n':
+                    return again
 
 def guessing_game():
 	"""
