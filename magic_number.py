@@ -1,7 +1,4 @@
-from builtins import input
-
 #!/usr/bin/env Python3
-# Python 2 & 3
 
 """
 Program generates a random number between 1 and 100, inclusive.
