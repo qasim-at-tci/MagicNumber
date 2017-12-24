@@ -1,4 +1,4 @@
-import unittest 
+import unittest
 
 from unittest.mock import patch
 from unittest import TestCase
@@ -7,24 +7,21 @@ from unittest import TestCase
 def get_input(text):
     return input(text)
 
-
-def answer():
-    ans = get_input('enter yes or no')
-    if ans == 'yes':
-        return 'you entered yes'
-    if ans == 'no':
-        return 'you entered no'
-
+def play_again():
+    while True:
+            again = input('Play again? Y/N:  ').lower()
+            if again == 'y' or again == 'n':
+                    return again
 
 class Test(TestCase):
 
-    @patch('builtins.input', return_value='yes')
-    def test_answer_yes(self, input):
-        self.assertEqual(answer(), 'you entered yes')
+    @patch('builtins.input', return_value='y')
+    def test_play_again_yes(self, input):
+        self.assertEqual(play_again(), 'y')
 
-    @patch('builtins.input', return_value='no')
-    def test_answer_no(self, input):
-        self.assertEqual(answer(), 'you entered no')
+    @patch('builtins.input', return_value='n')
+    def test_play_again_no(self, input):
+        self.assertEqual(play_again(), 'n')
 
 if __name__ == '__main__':
     unittest.main()
