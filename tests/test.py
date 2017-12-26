@@ -11,6 +11,13 @@ random = Random()
 def num_gen():
     return random.randint(1, 100)
 
+def user_guess(): 
+    while True: 
+        try: 
+            return int(input('Enter a guess: '))
+	except ValueError: 
+             print('Sorry, try again.')
+
 def play_again():
     while True:
             again = input('Play again? Y/N:  ').lower()
@@ -25,6 +32,10 @@ class num_gen_Test(unittest.TestCase):
 
     def test_num_gen(self):
         self.assertEqual(num_gen(), 59)
+
+class user_guess(): 
+
+
 
 class play_again_Test(unittest.TestCase):
 
