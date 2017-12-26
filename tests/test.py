@@ -34,7 +34,7 @@ class num_gen_Test(unittest.TestCase):
 		self.assertEqual(num_gen(), 7)
 
 class user_guess():
-
+	# Need to fix!!!
 	def get_int(self):
 		return input(self)
 
