@@ -9,46 +9,51 @@ from unittest import TestCase
 random = Random()
 
 def num_gen():
-    return random.randint(1, 100)
+	return random.randint(1, 100)
 
-def user_guess(): 
-    while True: 
-        try: 
-            return int(input('Enter a guess: '))
-	except ValueError: 
-             print('Sorry, try again.')
+def user_guess():
+	while True:
+		try:
+			return int(input('Enter a guess: '))
+		except ValueError:
+			print('Sorry, try again.')
 
 def play_again():
-    while True:
-            again = input('Play again? Y/N:  ').lower()
-            if again == 'y' or again == 'n':
-                    return again
+	while True:
+			again = input('Play again? Y/N:  ').lower()
+			if again == 'y' or again == 'n':
+					return again
 
 class num_gen_Test(unittest.TestCase):
 
-    def setUp(self):
-        global random
-        random = Random(666)
+	def setUp(self):
+		global random
+		random = Random(123)
 
-    def test_num_gen(self):
-        self.assertEqual(num_gen(), 59)
+	def test_num_gen(self):
+		self.assertEqual(num_gen(), 7)
 
-class user_guess(): 
+class user_guess():
 
+	def get_int(self):
+		return input(self)
 
+	@patch('builtins.input', return_value='abc')
+	def test_play_again_yes(self, input):
+		self.assertTrue(type(user_guess()) == 'int')
 
 class play_again_Test(unittest.TestCase):
 
-    def get_input(text):
-        return input(text)
+	def get_input(self):
+	    return input(self)
 
-    @patch('builtins.input', return_value='y')
-    def test_play_again_yes(self, input):
-        self.assertEqual(play_again(), 'y')
+	@patch('builtins.input', return_value='y')
+	def test_play_again_yes(self, input):
+		self.assertEqual(play_again(), 'y')
 
-    @patch('builtins.input', return_value='n')
-    def test_play_again_no(self, input):
-        self.assertEqual(play_again(), 'n')
+	@patch('builtins.input', return_value='n')
+	def test_play_again_no(self, input):
+		self.assertEqual(play_again(), 'n')
 
 if __name__ == '__main__':
-    unittest.main()
+	unittest.main()
