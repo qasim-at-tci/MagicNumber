@@ -55,7 +55,7 @@ def guessing_game():
 			break
 
 	if guess != magic_number:
-		print('Out of guesses! The magic number was: %s.' % magic_number)
+		print('Out of guesses! The magic number was: {}.'.format(magic_number))
 
 def game_play():
 	"""
@@ -71,5 +71,5 @@ def game_play():
 			break
 
 if __name__ == '__main__':
-	print("\nWelcome to the magic number guessing game!\nSee if you can guess the magic number (1-100) in 5 attempts or less.\n")
+	print("Welcome to the \"Magic\" number guessing game!\nTry to guess the magic number (1-100) in 5 attempts or less.")
 	game_play()
