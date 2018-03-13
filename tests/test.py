@@ -24,6 +24,24 @@ def play_again():
 			if again == 'y' or again == 'n':
 					return again
 
+def guessing_game():
+
+	magic_number = num_gen()
+
+	for attempt in range(MAX_ATTEMPTS):
+		guess = user_guess()
+
+		if guess < magic_number:
+			print('Higher...')
+		elif guess > magic_number:
+			print('Lower...')
+		else:
+			print('That\'s right!')
+			break
+
+	if guess != magic_number:
+		print('Out of guesses! The magic number was: {}.'.format(magic_number))
+
 class num_gen_Test(unittest.TestCase):
 
 	def setUp(self):
@@ -42,11 +60,11 @@ class user_guess_Test(unittest.TestCase):
 	@patch('builtins.input', return_value='77')
 	def test_user_guess(self, input):
 		self.assertTrue(user_guess(), int)
-
+"""
 class play_again_Test(unittest.TestCase):
 
 	def get_input(self):
-	    return input(self)
+		return input(self)
 
 	@patch('builtins.input', return_value='y')
 	def test_play_again_yes(self, input):
@@ -55,6 +73,9 @@ class play_again_Test(unittest.TestCase):
 	@patch('builtins.input', return_value='n')
 	def test_play_again_no(self, input):
 		self.assertEqual(play_again(), 'n')
+
+class guessing_game_Test(unittest.TestCase):
+"""
 
 if __name__ == '__main__':
 	unittest.main()
