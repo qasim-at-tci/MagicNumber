@@ -2,7 +2,7 @@
 Magic Number 
 ============
 
-Magic number guesser in Python 2 & 3 
+Magic number guesser in Python 3 
 ------------------------------------
 
 Requirements
