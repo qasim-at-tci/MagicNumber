@@ -14,12 +14,9 @@ def user_guess():
 
 class user_guess_Test(unittest.TestCase): 
 
-    def get_int(self):
-        return input(self)
-
     @patch('builtins.input', return_value='16')
     def test_user_guess(self, input): 
         self.assertTrue(user_guess(), int)
-        #self.assertFalse(user_guess(), str)
+
 if __name__ == '__main__':
     unittest.main()
