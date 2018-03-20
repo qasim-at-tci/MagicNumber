@@ -18,7 +18,7 @@ def generate_random_number():
 def user_guess():
 	"""
 	Prompt player, limiting input to integer.
-	Return integer.
+	Return input.
 	"""
 	while True:
 		try:
@@ -26,20 +26,10 @@ def user_guess():
 		except ValueError:
 			print('Input must be an integer. Try again.')
 
-def play_again():
-    """
-    Prompt player, limiting input to "Y" or "N"
-	Return y or n.
-    """
-    while True:
-            again = input('Play again? Y/N:  ').lower()
-            if again == 'y' or again == 'n':
-                    return again
-
-def guessing_game():
+def proximity_check():
 	"""
-	Compare user guess to magic number.
-	Provide user feedback.
+	Compare user_guess to magic_number.
+	Provide feedback.
 	"""
 	magic_number = generate_random_number()
 
@@ -57,12 +47,22 @@ def guessing_game():
 	if guess != magic_number:
 		print('Out of guesses! The magic number was: {}.'.format(magic_number))
 
+def play_again():
+    """
+    Prompt player, limiting input to "Y" or "N".
+	Return input.
+    """
+    while True:
+            again = input('Play again? Y/N:  ').lower()
+            if again == 'y' or again == 'n':
+                    return again
+
 def game_play():
 	"""
 	Play game. Allow user to play multiple rounds or resign.
 	"""
 	while True:
-		play = guessing_game()
+		evaluate = proximity_check()
 		another_round = play_again()
 
 		if another_round == 'y':
@@ -71,5 +71,5 @@ def game_play():
 			break
 
 if __name__ == '__main__':
-	print("Welcome to the \"Magic\" number guessing game!\nTry to guess the magic number (1-100) in 5 attempts or less.")
+	print("Welcome to the \"Magic\" number game!\nTry to guess the magic number (1-100) in 5 attempts or less.")
 	game_play()
