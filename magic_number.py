@@ -11,24 +11,24 @@ MAX_ATTEMPTS = 5
 
 def generate_random_number():
 	"""
-	Return random number between 1 and 100, inclusive
+	Return random number between 1 and 100, inclusive.
 	"""
 	return random.randint(1, 100)
 
 def user_guess():
 	"""
-	Prompt player for guess.
+	Prompt player, limiting input to integer.
 	Return integer.
 	"""
 	while True:
 		try:
 			return int(input('Enter a guess:  '))
 		except ValueError:
-			print('Sorry, try again.')
+			print('Input must be an integer. Try again.')
 
 def play_again():
     """
-    Prompt user for Y/N input.
+    Prompt player, limiting input to "Y" or "N"
 	Return y or n.
     """
     while True:
