@@ -1,6 +1,8 @@
 ============
 Magic Number 
 ============
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+  :target: https://opensource.org/licenses/MIT
 
 Magic number guessing game in Python 3 
 --------------------------------------
