@@ -4,9 +4,11 @@ Magic Number
 
 Magic number guessing game in Python 3 
 --------------------------------------
+Python 3 implementation of "guess the number" game. 
 
 Requirements
 ------------
+N/A
 
 Usage
 -----
