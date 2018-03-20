@@ -1,4 +1,4 @@
-#!/usr/bin/env Python3
+#!/usr/bin/env python
 
 """
 Program generates a random number between 1 and 100, inclusive.
@@ -9,7 +9,7 @@ import random
 
 MAX_ATTEMPTS = 5
 
-def num_gen():
+def generate_random_number():
 	"""
 	Return random number between 1 and 100, inclusive
 	"""
@@ -41,7 +41,7 @@ def guessing_game():
 	Compare user guess to magic number.
 	Provide user feedback.
 	"""
-	magic_number = num_gen()
+	magic_number = generate_random_number()
 
 	for attempt in range(MAX_ATTEMPTS):
 		guess = user_guess()
