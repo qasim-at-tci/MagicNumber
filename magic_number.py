@@ -26,7 +26,7 @@ def user_guess():
 		except ValueError:
 			print('Input must be an integer. Try again.')
 
-def proximity_check():
+def evaluate_user_guess():
 	"""
 	Compare user_guess to magic_number.
 	Provide feedback.
@@ -62,7 +62,7 @@ def game_play():
 	Play game. Allow user to play multiple rounds or resign.
 	"""
 	while True:
-		evaluate = proximity_check()
+		evaluate = evaluate_user_guess()
 		another_round = play_again()
 
 		if another_round == 'y':
