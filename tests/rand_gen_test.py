@@ -3,7 +3,7 @@
 
 import random
 
-for i in range(2):
+for i in range(1):
     random.seed(10)
-    for i in range(20):
+    for i in range(100):
         print(random.random())
