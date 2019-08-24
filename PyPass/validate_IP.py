@@ -13,4 +13,5 @@ def validate_IP():
         except ValueError:
             print('Bad value, try again.')
 
-validate_IP()
+addr = validate_IP()
+print("{} is a valid IPv4 address".format(addr))
