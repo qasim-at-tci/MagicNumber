@@ -13,5 +13,16 @@ def validate_IP():
         except ValueError:
             print('Bad value, try again.')
 
-addr = validate_IP()
-print("{} is a valid IPv4 address".format(addr))
+address = validate_IP()
+
+print("{} is a valid IPv4 address".format(address))
+
+octets = str(ipaddress.IPv4Address(address))
+
+print(octets)
+
+split_octets = octets.split('.',4)
+print(split_octets) 
+
+#replace_octets = octets.replace('.','*',4)
+#print(replace_octets)
