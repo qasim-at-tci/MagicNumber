@@ -3,13 +3,14 @@
 
 import ipaddress
 
-addr = '159.65.178.169'
-print(addr)
+address = '159.65.178.169'
+print(address)
 
-octet = addr.split('.',4)
-print(octet[2], octet[3], octet[1])
+strip_address = address.split('.',4)
+print(strip_address[2])
 
-octet_int = list(map(int, octet))
+octet_8 = ((strip_address[2] + '*' + str(int(strip_address[3]) + 8)).ljust(8, '*')) 
+print(octet_8)
 
-print(octet_int[2], octet_int[3], octet_int[1])
-
+octet_12 = ((strip_address[2] + '*' + str(int(strip_address[3]) + 12) + '*' + strip_address[1]).ljust(12, '*')) 
+print(octet_12)
