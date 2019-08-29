@@ -15,14 +15,7 @@ def validate_IP():
 
 address = validate_IP()
 
+print(type(address))
 print("{} is a valid IPv4 address".format(address))
 
-octets = str(ipaddress.IPv4Address(address))
 
-print(octets)
-
-split_octets = octets.split('.',4)
-print(split_octets) 
-
-#replace_octets = octets.replace('.','*',4)
-#print(replace_octets)
