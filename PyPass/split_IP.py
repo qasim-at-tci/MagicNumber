@@ -1,7 +1,4 @@
 #!/usr/bin/env python3
-# https://docs.python.org/3/library/ipaddress.html
-
-import ipaddress
 
 address = '159.65.178.169'
 print(address)
