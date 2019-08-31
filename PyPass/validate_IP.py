@@ -29,6 +29,5 @@ def twelve_bit():
 if __name__ == '__main__':
     address = validate_IP()
     split_address = address.split('.', 4)
-    print(' 8-bit:    12-bit: ')
     print(eight_bit(), twelve_bit())
 
