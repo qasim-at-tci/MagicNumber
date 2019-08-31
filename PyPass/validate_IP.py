@@ -12,8 +12,6 @@ def validate_IP():
         except ValueError:
             print('Bad value, try again.')
 
-# print("{} is a valid IPv4 address, continuing...".format(address))
-    
 def short_password(): 
     """ Transform IP address to 8-bit password."""
     return((split_address[2] + '*' + str(int(split_address[3]) + 8)).ljust(8, '*')) 
@@ -27,3 +25,5 @@ if __name__ == '__main__':
     split_address = address.split('.',4)
     print(short_password())
     print(long_password())
+
+# print("{} is a valid IPv4 address, continuing...".format(address))
