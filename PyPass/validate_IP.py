@@ -8,19 +8,22 @@ def validate_IP():
 
     while True:
         try:
-            return ipaddress.IPv4Address(input('Enter a valid IPv4 address: '))
+            return str(ipaddress.IPv4Address(input('Enter a valid IPv4 address: ')))
         except ValueError:
             print('Bad value, try again.')
 
-address = validate_IP()
+# print("{} is a valid IPv4 address, continuing...".format(address))
+    
+def short_password(): 
+    """ Transform IP address to 8-bit password."""
+    return((split_address[2] + '*' + str(int(split_address[3]) + 8)).ljust(8, '*')) 
 
-print("{} is a valid IPv4 address, continuing...".format(address))
+def long_password(): 
+    """ Transform IP address to 12-bit password."""
+    return((split_address[2] + '*' + str(int(split_address[3]) + 12) + '*' + split_address[1]).ljust(12, '*')) 
 
-#strip_address = address.split('.',4)
-#print(strip_address)
-
-#octet_8 = ((strip_address[2] + '*' + str(int(strip_address[3]) + 8)).ljust(8, '*')) 
-#print(octet_8)
-
-#octet_12 = ((strip_address[2] + '*' + str(int(strip_address[3]) + 12) + '*' + strip_address[1]).ljust(12, '*')) 
-#print(octet_12)
+if __name__ == '__main__': 
+    address = validate_IP()
+    split_address = address.split('.',4)
+    print(short_password())
+    print(long_password())
