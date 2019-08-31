@@ -16,14 +16,14 @@ def validate_IP():
 
 def eight_bit():
     """ Transform IP address to 8-bit password."""
-    return((split_address[2] + '*' 
-    + str(int(split_address[3]) + 8)).ljust(8, '*'))
+    return((split_address[2] + '*' +  
+           str(int(split_address[3]) + 8)).ljust(8, '*'))
 
 
 def twelve_bit():
     """ Transform IP address to 12-bit password."""
-    return((split_address[2] + '*' 
-    + str(int(split_address[3]) + 12) + '*' + split_address[1]).ljust(12, '*'))
+    return((split_address[2] + '*' +  
+           str(int(split_address[3]) + 12) + '*' + split_address[1]).ljust(12, '*'))
 
 
 if __name__ == '__main__':
@@ -31,3 +31,4 @@ if __name__ == '__main__':
     split_address = address.split('.', 4)
     print(' 8-bit:    12-bit: ')
     print(eight_bit(), twelve_bit())
+
