@@ -24,12 +24,12 @@ class validate_IP_Test(unittest.TestCase):
         return input(self)
 
     @patch('builtins.input', return_value='192.168.1.1')
-    def test_validate_IP(self, input):
-        self.assertEqual(validate_IP(), '192.168.1.1')
+    def test_validate_IP_01(self, input):
+        self.assertTrue(validate_IP(), '192.168.1.1')
 
     @patch('builtins.input', return_value='10.0.0.1')
-    def test_validate_IP(self, input):
-        self.assertEqual(validate_IP(), '10.0.0.1')
+    def test_validate_IP_02(self, input):
+        self.assertTrue(validate_IP(), '10.0.1.1')
 
 
 if __name__ == '__main__':
