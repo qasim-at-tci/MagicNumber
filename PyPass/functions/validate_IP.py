@@ -31,6 +31,10 @@ class validate_IP_Test(unittest.TestCase):
     def test_validate_IP_02(self, input):
         self.assertTrue(validate_IP(), '10.0.1.1')
 
+    @patch('builtins.input', return_value='derp')
+    def test_validate_IP_03(self, input):
+        self.assertRaisesRegex(ValueError, 'Bad value, try again', int, 'derp')
+
 
 if __name__ == '__main__':
     unittest.main()
