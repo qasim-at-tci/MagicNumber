@@ -7,34 +7,31 @@ import unittest
 from unittest.mock import patch
 from unittest import TestCase
 
-
 def validate_IP(): 
     """Prompt user for IPv4 address, then validate."""
 
     while True: 
         try: 
-            return str(ipaddress.IPv4Address(input('Enter a valid IPv4 address: ')))
+            return ipaddress.IPv4Address(input('Enter a valid IPv4 address: '))
         except ValueError: 
             print('Bad value, try again.') 
 
 
 class validate_IP_Test(unittest.TestCase): 
 
-    def get_input(self): 
-        return input(self)
-
     @patch('builtins.input', return_value='192.168.1.1')
     def test_validate_IP_01(self, input):
-        self.assertTrue(validate_IP(), '192.168.1.1')
+        self.assertIsInstance(validate_IP(), ipaddress.IPv4Address)
 
     @patch('builtins.input', return_value='10.0.0.1')
     def test_validate_IP_02(self, input):
-        self.assertTrue(validate_IP(), '10.0.1.1')
+        self.assertIsInstance(validate_IP(), ipaddress.IPv4Address)
 
-    @patch('builtins.input', return_value='derp')
-    def test_validate_IP_03(self, input):
-        self.assertRaisesRegex(ValueError, 'Bad value, try again', int, 'derp')
+    # This will fail!!! -> Need to write test to check for exception.  
 
+    # @patch('builtins.input', return_value='derpy-do')
+    #def test_validate_IP_03(self, input):
+    #    self.assertIsInstance(validate_IP(), ipaddress.IPv4Address)
 
 if __name__ == '__main__':
     unittest.main()
