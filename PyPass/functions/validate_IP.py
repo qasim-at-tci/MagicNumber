@@ -15,6 +15,7 @@ def validate_IP():
             return ipaddress.IPv4Address(input('Enter a valid IPv4 address: '))
         except ValueError: 
             print('Bad value, try again.') 
+            raise 
 
 
 class validate_IP_Test(unittest.TestCase): 
@@ -27,11 +28,11 @@ class validate_IP_Test(unittest.TestCase):
     def test_validate_IP_02(self, input):
         self.assertIsInstance(validate_IP(), ipaddress.IPv4Address)
 
-    # This will fail!!! -> Need to write test to check for exception.  
-
-    # @patch('builtins.input', return_value='derpy-do')
-    #def test_validate_IP_03(self, input):
-    #    self.assertIsInstance(validate_IP(), ipaddress.IPv4Address)
+    @patch('builtins.input', return_value='Derp!')
+    def test_validate_IP_03(self, input):
+        with self.assertRaises(ValueError): 
+            validate_IP() 
+             
 
 if __name__ == '__main__':
     unittest.main()
