@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-# https://docs.python.org/3/library/ipaddress.html
+
+"""IPv4 validation using `ipaddress` module.
+
+For reference: https://docs.python.org/3/library/ipaddress.html
+"""
 
 import ipaddress
 import unittest
@@ -7,7 +11,17 @@ import unittest
 from unittest.mock import patch
 
 def ipv4_addr_check():
-    """Prompt user for IPv4 address, then validate."""
+    """Prompt user for IPv4 address, then validate.
+
+    Args:
+        arg1 : input
+
+    Raises: 
+        ValueError: `Bad Value, try again.`
+
+    Returns:
+        class 'ipaddress.IPv4Address' if valid, re-prompt if not.
+    """
 
     while True:
         try:
@@ -17,7 +31,12 @@ def ipv4_addr_check():
             raise
 
 
-class IPV4AddrCheckTest(unittest.TestCase):
+class IPv4AddrCheckTest(unittest.TestCase):
+
+    """Unit tests.
+
+    Use `patch()` to mock objects for testing.
+    """
 
     @patch('builtins.input', return_value='192.168.1.1')
     def test_ipv4_addr_check_01(self, input):
