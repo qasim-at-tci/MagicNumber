@@ -5,7 +5,6 @@ import ipaddress
 import unittest
 
 from unittest.mock import patch
-from unittest import TestCase
 
 def ipv4_addr_check():
     """Prompt user for IPv4 address, then validate."""
