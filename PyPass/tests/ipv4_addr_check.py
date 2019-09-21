@@ -14,7 +14,7 @@ def ipv4_addr_check():
     """Prompt user for IPv4 address, then validate.
 
     Args:
-        arg1 : input
+        arg1: input
 
     Raises:
         ValueError: `Bad Value, try again.`
@@ -25,7 +25,7 @@ def ipv4_addr_check():
 
     while True:
         try:
-            return ipaddress.IPv4Address(input('Enter a valid IPv4 address: '))
+            return ipaddress.IPv4Address(input('Enter valid IPv4 address: '))
         except ValueError:
             print('Bad value, try again.')
             raise
