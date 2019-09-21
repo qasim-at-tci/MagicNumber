@@ -3,11 +3,12 @@
 """Docstring.
 """
 
+import unittest
+
+
 ADDRESS = '159.65.178.169'
-print(ADDRESS)
 
 SPLIT_ADDRESS = ADDRESS.split('.', 4)
-print(SPLIT_ADDRESS)
 
 
 def eight_bit_passwd():
@@ -21,4 +22,10 @@ def twelve_bit_passwd():
     return((SPLIT_ADDRESS[2] + '*' +
             str(int(SPLIT_ADDRESS[3]) + 12) + '*' + SPLIT_ADDRESS[1]).ljust(12, '*'))
 
-print(eight_bit_passwd(), twelve_bit_passwd())
+
+class SplitIPTest(unittest.TestCase):
+    """Unit tests.
+    """
+
+
+ 
