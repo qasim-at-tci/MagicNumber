@@ -1,6 +1,27 @@
 #!/usr/bin/env python3
 
-"""Convert IP address to 8- or 12-bit password.
+"""Convert IPv4 address to 8- or 12-bit password.
+
+8-bit algorithm:
+Take 4-octet IPv4 address -->
+split address by '.' -->
+take 3rd octet and append `*` -->
+take 4th octet then add 8 and append `*`
+such that string is 8 characters in length.
+
+192.168.1.1 becomes:
+1*9*****
+
+12-bit algorithm:
+Take 4-octet IPv4 address -->
+split address by '.' -->
+take 3rd octet and append `*` -->
+take 4th octet then add 12 and append `*` -->
+take 2nd octet and append `*`
+such that string is 12 characters in length.
+
+192.168.1.1 becomes:
+1*13*168****
 """
 
 import unittest
