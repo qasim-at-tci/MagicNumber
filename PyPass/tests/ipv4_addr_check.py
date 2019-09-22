@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-"""IPv4 validation using `ipaddress` module.
-
+"""IPv4 validation using `ipaddress` module
+.
+A ValueError is raised if address does not represent a valid IPv4.
 For reference: https://docs.python.org/3/library/ipaddress.html
 """
 
@@ -11,7 +12,7 @@ import unittest
 from unittest.mock import patch
 
 def ipv4_addr_check():
-    """Prompt user for IPv4 address, then validate. Re-prompt if bad value.
+    """Prompt user for IPv4 address, then validate. Re-prompt if invalid.
     """
 
     while True:
