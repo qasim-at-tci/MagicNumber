@@ -8,17 +8,6 @@ import ipaddress
 
 def ipv4_addr_check():
     """Prompt user for IPv4 address, then validate.
-
-    Args:
-        arg1: input
-
-    Raises:
-        ValueError: `Bad Value, try again.`
-
-    Returns:
-        Transform class 'ipaddress.IPv4Address' if valid to string,
-        re-prompt if not.
-
     """
 
     while True:
@@ -29,13 +18,15 @@ def ipv4_addr_check():
 
 
 def eight_bit_passwd():
-    """ Transform IP address to 8-bit password."""
+    """Transform IP address to 8-bit password.
+    """
     return((SPLIT_ADDRESS[2] + '*' +
             str(int(SPLIT_ADDRESS[3]) + 8)).ljust(8, '*'))
 
 
 def twelve_bit_passwd():
-    """ Transform IP address to 12-bit password."""
+    """Transform IP address to 12-bit password.
+    """
     return((SPLIT_ADDRESS[2] + '*' +
             str(int(SPLIT_ADDRESS[3]) + 12) + '*' + SPLIT_ADDRESS[1]).ljust(12, '*'))
 
