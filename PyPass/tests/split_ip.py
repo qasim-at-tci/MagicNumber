@@ -7,7 +7,7 @@ Take 4-octet IPv4 address -->
 split address by '.' -->
 take 3rd octet and append `*` -->
 take 4th octet then add 8 and append `*`
-such that string is 8 characters in length.
+such that string is 8 characters in length, e.g.:
 
 192.168.1.1 becomes:
 1*9*****
@@ -18,7 +18,7 @@ split address by '.' -->
 take 3rd octet and append `*` -->
 take 4th octet then add 12 and append `*` -->
 take 2nd octet and append `*`
-such that string is 12 characters in length.
+such that string is 12 characters in length, e.g.:
 
 192.168.1.1 becomes:
 1*13*168****
