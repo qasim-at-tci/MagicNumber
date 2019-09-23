@@ -1,5 +1,7 @@
-#!/bin/py
-#Python2 OR 3
+#!/usr/bin/env python3
+
+"""Placeholder for GUI based off of old project.
+"""
 
 try:
     import tkinter as tk
@@ -7,14 +9,21 @@ except ImportError:
     import Tkinter as tk
 
 def convert_f2c(f_in):
-    """ Convert the value in temp_data from Fahrenheit to Celsius and store the result in out_data. """
+    """Convert the value in temp_data from fahrenheit to celsius &
+    store the result in out_data.
+    """
     return ((f_in - 32) * 5 / 9)
 
 def convert_c2f(c_in):
-    """ Convert the value in temp_data from Celsius to Fahrenheit and store the result in out-data. """
+    """ Convert the value in temp_data from celsius to fahrenheit &
+    store the result in out-data.
+    """
     return ((c_in * 1.8) + 32)
 
 class MainWindow(tk.Frame):
+    """Class descriptor.
+    """
+
     def __init__(self, master):
         tk.Frame.__init__(self, master)
         master.config(menu=MenuBar(self))
@@ -39,14 +48,20 @@ class MainWindow(tk.Frame):
         btn.pack()
 
     def f2c_mode(self):
+        """Placeholder.
+        """
         self.mode = 'f2c'
         self.label_in.config(text='Temperature in Fahrenheit:')
 
     def c2f_mode(self):
+        """Placeholder.
+        """
         self.mode = 'c2f'
         self.label_in.config(text='Temperature in Celsius:')
 
     def convert(self):
+        """Placeholder.
+        """
         try:
             if self.mode == 'f2c':
                 temp_out = convert_f2c(self.temp_in.get())
@@ -57,6 +72,9 @@ class MainWindow(tk.Frame):
             self.temp_out.set("ERROR: {}".format(e))
 
 class MenuBar(tk.Menu):
+    """Class descriptor.
+    """
+
     def __init__(self, master):
         tk.Menu.__init__(self, master)
 
@@ -68,6 +86,8 @@ class MenuBar(tk.Menu):
         file_menu.add_command(label='Exit', command=self.quit)
 
 def main():
+    """Placeholder.
+    """
     window = tk.Tk()
     window.title("Temp Utility")
     frame = MainWindow(window)
