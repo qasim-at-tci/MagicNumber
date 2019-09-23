@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-"""IPv4 validation using `ipaddress` module
-.
+"""IPv4 validation using `ipaddress` module.
+
 A ValueError is raised if address does not represent a valid IPv4.
 For reference: https://docs.python.org/3/library/ipaddress.html
 """
