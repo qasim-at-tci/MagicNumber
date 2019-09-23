@@ -6,18 +6,12 @@ try:
 except ImportError:
     import Tkinter as tk
 
-def 8_bit(8_bit_in): 
-    """ 8-bit password generator. """
-
-def 12_bit(12_bit_in): 
-    """ 12-bit password generator. """
-
 def convert_f2c(f_in):
     """ Convert the value in temp_data from Fahrenheit to Celsius and store the result in out_data. """
     return ((f_in - 32) * 5 / 9)
 
 def convert_c2f(c_in):
-    """ Convert the value in temp_data from Celsius to Fahrenheit and store the result in out_data. """
+    """ Convert the value in temp_data from Celsius to Fahrenheit and store the result in out-data. """
     return ((c_in * 1.8) + 32)
 
 class MainWindow(tk.Frame):
