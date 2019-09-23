@@ -6,6 +6,10 @@ A ValueError is raised if address does not represent a valid IPv4.
 For reference: https://docs.python.org/3/library/ipaddress.html
 """
 
+"""TODO: Disable pylint messages: 
+disable-msg=W0622,W0613
+"""
+
 import ipaddress
 import unittest
 
