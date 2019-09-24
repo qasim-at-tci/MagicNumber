@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# pylint: disable=R0901
 
 """Placeholder for GUI based off of old project.
 """
@@ -12,13 +13,13 @@ def convert_f2c(f_in):
     """Convert the value in temp_data from fahrenheit to celsius &
     store the result in out_data.
     """
-    return ((f_in - 32) * 5 / 9)
+    return (f_in - 32) * 5 / 9
 
 def convert_c2f(c_in):
     """ Convert the value in temp_data from celsius to fahrenheit &
     store the result in out-data.
     """
-    return ((c_in * 1.8) + 32)
+    return (c_in * 1.8) + 32
 
 class MainWindow(tk.Frame):
     """Class descriptor.
