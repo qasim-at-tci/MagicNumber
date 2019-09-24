@@ -68,8 +68,8 @@ class MainWindow(tk.Frame):
             else:
                 temp_out = convert_c2f(self.temp_in.get())
             self.temp_out.set("{:.3f}".format(temp_out))
-        except ValueError as e:
-            self.temp_out.set("ERROR: {}".format(e))
+        except ValueError as err:
+            self.temp_out.set("ERROR: {}".format(err))
 
 class MenuBar(tk.Menu):
     """Class descriptor.
