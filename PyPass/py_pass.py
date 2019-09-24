@@ -5,7 +5,6 @@
 
 import ipaddress
 
-
 def ipv4_addr_check():
     """Prompt user for IPv4 address, then validate.
     """
@@ -16,13 +15,11 @@ def ipv4_addr_check():
         except ValueError:
             print('Bad value, try again.')
 
-
 def eight_bit_passwd():
     """Transform IP address to 8-bit password.
     """
     return((SPLIT_ADDRESS[2] + '*' +
             str(int(SPLIT_ADDRESS[3]) + 8)).ljust(8, '*'))
-
 
 def twelve_bit_passwd():
     """Transform IP address to 12-bit password.
@@ -30,8 +27,8 @@ def twelve_bit_passwd():
     return((SPLIT_ADDRESS[2] + '*' +
             str(int(SPLIT_ADDRESS[3]) + 12) + '*' + SPLIT_ADDRESS[1]).ljust(12, '*'))
 
-
 if __name__ == '__main__':
     ADDRESS = ipv4_addr_check()
     SPLIT_ADDRESS = ADDRESS.split('.', 4)
-    print(eight_bit_passwd(), twelve_bit_passwd())
+    print(eight_bit_passwd())
+    print(twelve_bit_passwd())
