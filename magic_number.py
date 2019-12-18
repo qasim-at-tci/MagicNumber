@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-"""
-Program generates a random number between 1 and 100, inclusive.
+"""Program generates a random number between 1 and 100, inclusive.
 User has five attempts to correctly guess the number.
 """
 
+from builtins import input
 import random
 
 MAX_ATTEMPTS = 5
@@ -21,7 +21,7 @@ def user_guess():
 
     while True:
         try:
-            return int(input('Enter a guess:  '))
+            return int(input('Enter a guess: '))
         except ValueError:
             print('Input must be an integer. Try again.')
 
@@ -32,7 +32,7 @@ def evaluate_user_guess():
 
     magic_number = generate_random_number()
 
-    for attempt in range(MAX_ATTEMPTS):
+    for _i in range(MAX_ATTEMPTS):
         guess = user_guess()
 
         if guess < magic_number:
@@ -52,15 +52,15 @@ def play_again():
     """
 
     while True:
-        again = input('Play again? Y/N:  ').lower()
-        if again == 'y' or again == 'n':
+        again = input('Play again? Y/N: ').lower()
+        if again in ('y', 'n'):
             return again
 
 def game_play():
     """Play game. Allow user to play multiple rounds or resign.
     """
     while True:
-        evaluate = evaluate_user_guess()
+        evaluate_user_guess()
         another_round = play_again()
 
         if another_round == 'y':
