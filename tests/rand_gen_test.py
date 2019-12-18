@@ -1,9 +1,13 @@
 #!/usr/bin/env python
-# testing seed value 
+
+"""Testing seed value.
+"""
 
 import random
 
-for i in range(1):
+for _i in range(1):
+    """Placeholder.
+    """
     random.seed(10)
-    for i in range(100):
+    for _i in range(100):
         print(random.random())
