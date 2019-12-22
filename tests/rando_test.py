@@ -9,21 +9,25 @@ from random import Random
 random = Random()
 
 def num_gen():
-    """
-    Return random number between 1 and 100, inclusive
+    """Return random integer between 1 and 100, inclusive.
     """
     return random.randint(1, 100)
 
-class num_gen_Test(unitttest.TestCase):
+class NumGenTest(unittest.TestCase):
     """Placeholder.
     """
 
-    def setUp(self):
-        global random
-        random = Random(123)
+    def set_up(self):
+        """Seed value.
+        """
+        global random 
+        RANDOM = Random(123)
 
     def test_num_gen(self):
+        """Placeholder.
+        """
         self.assertEqual(num_gen(), 7)
+        self.assertNotEqual(num_gen(), 49)
 
 if __name__ == '__main__':
     unittest.main()
