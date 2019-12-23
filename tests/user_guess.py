@@ -8,7 +8,8 @@ import unittest
 from unittest.mock import patch
 
 def user_guess():
-    """Placeholder.
+    """Prompt user for input.
+    Return integer.
     """
     while True:
         try:
