@@ -64,10 +64,14 @@ class NumGenTest(unittest.TestCase):
         global random
         random = Random(123)
 
-    def test_num_gen(self):
+    def test_num_gen_01(self):
         """Placeholder.
         """
         self.assertEqual(num_gen(), 7)
+
+    def test_num_gen_02(self):
+        """Placeholder.
+        """
         self.assertNotEqual(num_gen(), 49)
 
 class UserGuessTest(unittest.TestCase):
