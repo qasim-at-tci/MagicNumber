@@ -1,7 +1,7 @@
 #!/user/bin/env python
 # pylint: disable=W0613,W0622
 
-"""Test to validate user input.
+"""Test suite.
 """
 
 import unittest
