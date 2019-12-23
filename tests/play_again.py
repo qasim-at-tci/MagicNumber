@@ -27,7 +27,6 @@ class PlayAgainTest(unittest.TestCase):
         """
         self.assertEqual(play_again(), 'y')
 
-
     @patch('builtins.input', return_value='N')
     def test_play_again_02(self, input):
         """Valid return value.
