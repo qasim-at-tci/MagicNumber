@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 
-"""Placeholder.
+"""Test suite.
 """
 
-import unittest
 from random import Random
+
+import unittest
+from unittest.mock import patch
 
 random = Random()
 
 def num_gen():
-    """Return random integer between 1 and 100, inclusive.
+    """Generate random integer between 1 and 100, inclusive.
     """
     return random.randint(1, 100)
 
@@ -17,16 +19,20 @@ class NumGenTest(unittest.TestCase):
     """Placeholder.
     """
 
-    def set_up(self):
-        """Seed value.
+    def setUp(self):
+        """Placholder.
         """
-        global random 
-        RANDOM = Random(123)
+        global random
+        random = Random(123)
 
-    def test_num_gen(self):
+    def test_num_gen_01(self):
         """Placeholder.
         """
         self.assertEqual(num_gen(), 7)
+
+    def test_num_gen_02(self):
+        """Placeholder.
+        """
         self.assertNotEqual(num_gen(), 49)
 
 if __name__ == '__main__':
