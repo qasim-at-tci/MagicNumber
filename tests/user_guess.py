@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # pylint: disable=W0613,W0622
 
-"""Prompt user for input and return if int.
+"""Test suite.
 """
 
 import unittest
