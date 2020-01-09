@@ -7,24 +7,24 @@ import unitest
 
 from unitest.mock import patch
 
-MAGIC_NUMBER = 50
+MAGIC_NUMBER = 21
+MAX_ATTEMPTS = 1
+GUESS = 50
 
-def evaluate_user_guess():
-    """Compare user guess to "magic" number.
+def evaluate_USER_GUESS():
+    """Compare user GUESS to "magic" number.
     Provide feedback.
     """
 
-
     for _i in range(MAX_ATTEMPTS):
-        guess = user_guess()
 
-        if guess < MAGIC_NUMBER:
+        if GUESS < MAGIC_NUMBER:
             print('Higher...')
-        elif guess > MAGIC_NUMBER:
+        elif GUESS > MAGIC_NUMBER:
             print('Lower...')
         else:
             print('That\'s right!')
             break
 
-    if guess != MAGIC_NUMBER:
-        print('Out of guesses! The magic number was: {}.'.format(MAGIC_NUMBER))
+    if GUESS != MAGIC_NUMBER:
+        print('Out of GUESSes! The magic number was: {}.'.format(MAGIC_NUMBER))
