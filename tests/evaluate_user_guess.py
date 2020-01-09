@@ -18,13 +18,13 @@ def evaluate_user_guess():
     for _i in range(MAX_ATTEMPTS):
         guess = user_guess()
 
-        if guess < magic_number:
+        if guess < MAGIC_NUMBER:
             print('Higher...')
-        elif guess > magic_number:
+        elif guess > MAGIC_NUMBER:
             print('Lower...')
         else:
             print('That\'s right!')
             break
 
-    if guess != magic_number:
-        print('Out of guesses! The magic number was: {}.'.format(magic_number))
+    if guess != MAGIC_NUMBER:
+        print('Out of guesses! The magic number was: {}.'.format(MAGIC_NUMBER))
