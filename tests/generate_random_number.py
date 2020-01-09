@@ -15,22 +15,22 @@ def num_gen():
     return random.randint(1, 100)
 
 class NumGenTest(unittest.TestCase):
-    """Placeholder.
+    """Test class.
     """
 
     def setUp(self):
-        """Placholder.
+        """Set seed value.
         """
         global random
         random = Random(123)
 
     def test_num_gen_01(self):
-        """Placeholder.
+        """Valid return value.
         """
         self.assertEqual(num_gen(), 7)
 
     def test_num_gen_02(self):
-        """Placeholder.
+        """Invalid return value.
         """
         self.assertNotEqual(num_gen(), 49)
 
