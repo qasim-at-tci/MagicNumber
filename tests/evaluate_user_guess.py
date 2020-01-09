@@ -3,16 +3,16 @@
 """Placeholder.
 """
 
-import unitest
+import unittest
 
-from unitest.mock import patch
+from unittest.mock import patch
 
 MAGIC_NUMBER = 21
 MAX_ATTEMPTS = 1
 GUESS = 50
 
-def evaluate_USER_GUESS():
-    """Compare user GUESS to "magic" number.
+def evaluate_user_guess():
+    """Compare user guess to "magic" number.
     Provide feedback.
     """
 
@@ -27,4 +27,4 @@ def evaluate_USER_GUESS():
             break
 
     if GUESS != MAGIC_NUMBER:
-        print('Out of GUESSes! The magic number was: {}.'.format(MAGIC_NUMBER))
+        print('Out of guesses! The magic number was: {}.'.format(MAGIC_NUMBER))
