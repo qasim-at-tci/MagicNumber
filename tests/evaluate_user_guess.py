@@ -19,25 +19,24 @@ def evaluate_user_guess():
         current_guess = random.choice(GUESS)
 
         if current_guess < MAGIC_NUMBER:
-            print(current_guess)
-            print('Higher...')
+            return 'Higher...'
         elif current_guess > MAGIC_NUMBER:
-            print(current_guess)
-            print('Lower...')
+            return 'Lower...'
         else:
-            print('That\'s right!')
+            return 'That\'s right!'
             break
 
     if GUESS != MAGIC_NUMBER:
-        print('Out of guesses! The magic number was: {}.'.format(MAGIC_NUMBER))
+        return 'Out of guesses!'
 
 class EvaluateUserGuess(unittest.TestCase):
     """Unit test.
     """
     @patch('builtins.input', return_value='')
-    def test_evaluate_user_guess():
+    def test_evaluate_user_guess(self, input):
         """Placeholder
         """
-        self.assetEqual(evaluate_user_guess(), "") 
+        self.assertEqual(evaluate_user_guess(), "Out of guesses!")
 
-evaluate_user_guess()
+if __name__ == '__main__':
+    unittest.main()
