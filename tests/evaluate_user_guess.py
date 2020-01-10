@@ -2,9 +2,10 @@
 
 """Placeholder.
 """
+
 import random
-#import unittest
-#from unittest.mock import patch
+import unittest
+from unittest.mock import patch
 
 MAGIC_NUMBER = 83
 MAX_ATTEMPTS = 5
@@ -29,5 +30,14 @@ def evaluate_user_guess():
 
     if GUESS != MAGIC_NUMBER:
         print('Out of guesses! The magic number was: {}.'.format(MAGIC_NUMBER))
+
+class EvaluateUserGuess(unittest.TestCase):
+    """Unit test.
+    """
+    @patch('builtins.input', return_value='')
+    def test_evaluate_user_guess():
+        """Placeholder
+        """
+        self.assetEqual(evaluate_user_guess(), "") 
 
 evaluate_user_guess()
