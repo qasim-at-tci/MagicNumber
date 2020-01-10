@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# pylint: disable=w0622
 
 """Placeholder.
 """
@@ -24,7 +25,6 @@ def evaluate_user_guess():
             return 'Lower...'
         else:
             return 'That\'s right!'
-            break
 
     if GUESS != MAGIC_NUMBER:
         return 'Out of guesses!'
