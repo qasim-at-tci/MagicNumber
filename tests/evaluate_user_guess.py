@@ -3,13 +3,13 @@
 """Placeholder.
 """
 
-import unittest
+#import unittest
+#from unittest.mock import patch
 
-from unittest.mock import patch
-
-MAGIC_NUMBER = 21
-MAX_ATTEMPTS = 1
-GUESS = 50
+MAGIC_NUMBER = 2
+MAX_ATTEMPTS = 5
+GUESS = ('50', '25', '12', '6', '3')
+list(GUESS)
 
 def evaluate_user_guess():
     """Compare user guess to "magic" number.
@@ -17,14 +17,16 @@ def evaluate_user_guess():
     """
 
     for _i in range(MAX_ATTEMPTS):
-
-        if GUESS < MAGIC_NUMBER:
-            print('Higher...')
-        elif GUESS > MAGIC_NUMBER:
-            print('Lower...')
-        else:
-            print('That\'s right!')
-            break
+        for _i in(GUESS):
+            if GUESS < MAGIC_NUMBER:
+                print('Higher...')
+            elif GUESS > MAGIC_NUMBER:
+                print('Lower...')
+            else:
+                print('That\'s right!')
+                break
 
     if GUESS != MAGIC_NUMBER:
         print('Out of guesses! The magic number was: {}.'.format(MAGIC_NUMBER))
+
+evaluate_user_guess()
