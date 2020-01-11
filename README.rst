@@ -1,6 +1,8 @@
 ============
 Magic Number 
 ============
+.. image:: https://travis-ci.org/marshki/MagicNumber.svg?branch=master
+    :target: https://travis-ci.org/marshki/MagicNumber
 
 .. image:: https://api.codacy.com/project/badge/Grade/9e05b8fda56a4a569f923f1ec9b5d3ff    
     :target: https://www.codacy.com/manual/marshki/MagicNumber?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/MagicNumber&amp;utm_campaign=Badge_Grade
@@ -33,7 +35,7 @@ Game play:
 
 - Game selects one (1) random "magic" number.
 - Player has five (5) attempts to guess "magic" number.
-- Game provides feedback as to how close player's guess is to "magic" number, tracking rounds.
+- Game provides feedback as to how close player's guess is to "magic" number, tracking attempts.
 
 Change Log
 ----------
