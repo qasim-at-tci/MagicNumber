@@ -4,16 +4,26 @@ Magic Number
 .. image:: https://img.shields.io/badge/License-MIT-yellow.svg
   :target: https://opensource.org/licenses/MIT
 
-Magic number guessing game in Python 3 
---------------------------------------
-Python 3 implementation of "guess the number" game. 
+Magic number guessing game
+--------------------------
+No frills implementation of the "guess the number" game for Python 2 & 3.
 
 Requirements
 ------------
-N/A
+None.
 
 Usage
 -----
+From a shell:
+::
+    python magic_number.py
+    python3 magic_number.py
+
+Game play:
+
+- Game selects one (1) random "magic" number.
+- Player has five (5) attempts to guess "magic" number.
+- Game provides feedback as to how close player's guess is to "magic" number, tracking rounds.
 
 Change Log
 ----------
