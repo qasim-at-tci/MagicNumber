@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
-"""Program generates a random number between 1 and 100, inclusive.
-User has five attempts to correctly guess the number.
+"""A text-based implementation of "magic" number guessing game
+in Python 2 & 3.
 """
 
+from __future__ import print_function
 from builtins import input
 import random
 
@@ -69,6 +70,9 @@ def game_play():
             break
 
 if __name__ == '__main__':
-    print("Welcome to the \"Magic\" number game!\
-          \nTry to guess the magic number (1-100) in 5 attempts or less.")
-    game_play()
+    print("""
+Welcome to the "Magic" number game!
+Try to guess the magic number (1-100) in 5 attempts or less."
+    """)
+
+game_play()
