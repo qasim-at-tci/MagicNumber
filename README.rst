@@ -4,8 +4,8 @@ Magic Number
 .. image:: https://travis-ci.org/marshki/MagicNumber.svg?branch=master
     :target: https://travis-ci.org/marshki/MagicNumber
 
-.. image:: https://api.codacy.com/project/badge/Grade/9e05b8fda56a4a569f923f1ec9b5d3ff    
-    :target: https://www.codacy.com/manual/marshki/MagicNumber?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/MagicNumber&amp;utm_campaign=Badge_Grade
+.. image:: https://app.codacy.com/project/badge/Grade/dd75925d8a40461b9747da8c62bf3736    
+   :target: https://www.codacy.com/gh/marshki/MagicNumber/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/MagicNumber&amp;utm_campaign=Badge_Grade
 
 .. image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
    :target: https://www.python.org/
