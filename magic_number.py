@@ -66,8 +66,7 @@ def game_play():
 
         if another_round == 'y':
             continue
-        else:
-            break
+        break
 
 if __name__ == '__main__':
     print("""
