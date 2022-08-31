@@ -13,7 +13,7 @@ MAX_ATTEMPTS = 5
 def generate_random_number():
     """Return random number between 1 and 100, inclusive.
     """
-    return random.randint(1, 100)
+    return random.randint(1, 100) # nosec B311
 
 def user_guess():
     """Prompt player, limiting input to integer.
