@@ -17,7 +17,7 @@ def evaluate_user_guess():
     Provide feedback.
     """
     for _i in range(MAX_ATTEMPTS):
-        current_guess = random.choice(GUESS)
+        current_guess = random.choice(GUESS) # nosec B311
 
         if current_guess < MAGIC_NUMBER:
             print('Higher...')
