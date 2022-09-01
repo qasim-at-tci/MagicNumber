@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# pylint: disable=w0603
 
 """Test suite.
 """
