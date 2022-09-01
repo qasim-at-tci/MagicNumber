@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#pylint: disable=C0209
 
 """A text-based implementation of "magic" number guessing game
 in Python 2 & 3.
@@ -13,7 +14,7 @@ MAX_ATTEMPTS = 5
 def generate_random_number():
     """Return random number between 1 and 100, inclusive.
     """
-    return random.randint(1, 100) # nosec B311
+    return random.randint(1, 100) #nosec B311
 
 def user_guess():
     """Prompt player, limiting input to integer.
@@ -67,6 +68,7 @@ def game_play():
         if another_round == 'y':
             continue
         break
+
 
 if __name__ == '__main__':
     print("""
