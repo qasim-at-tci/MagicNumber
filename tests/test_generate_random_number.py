@@ -35,5 +35,6 @@ class NumGenTest(unittest.TestCase):
         """
         self.assertNotEqual(num_gen(), 49)
 
+
 if __name__ == '__main__':
     unittest.main()
