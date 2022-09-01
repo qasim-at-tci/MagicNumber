@@ -7,12 +7,12 @@ from random import Random
 
 import unittest
 
-random = Random()
+RANDOM = Random()
 
 def num_gen():
     """Generate random integer between 1 and 100, inclusive.
     """
-    return random.randint(1, 100) # nosec B311
+    return RANDOM.randint(1, 100) # nosec B311
 
 class NumGenTest(unittest.TestCase):
     """Test class.
@@ -21,8 +21,8 @@ class NumGenTest(unittest.TestCase):
     def setUp(self):
         """Set seed value.
         """
-        global random
-        random = Random(123)
+        global RANDOM
+        RANDOM = Random(123)
 
     def test_num_gen_01(self):
         """Valid return value.
