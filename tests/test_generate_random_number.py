@@ -12,7 +12,7 @@ random = Random()
 def num_gen():
     """Generate random integer between 1 and 100, inclusive.
     """
-    return random.randint(1, 100)
+    return random.randint(1, 100) # nosec B311
 
 class NumGenTest(unittest.TestCase):
     """Test class.
