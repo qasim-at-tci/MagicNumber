@@ -1,5 +1,5 @@
 ============
-Magic Number 
+Magic Number :magic_wand::hash: 
 ============
 .. image:: https://travis-ci.org/marshki/MagicNumber.svg?branch=master
     :target: https://travis-ci.org/marshki/MagicNumber
