@@ -40,9 +40,10 @@ Game play:
 Sample Output
 -------------
 ::
+
     Welcome to the "Magic" number game!
     Try to guess the magic number (1-100) in 5 attempts or less.
-::    
+
     Enter a guess: 50
     Lower...
     Enter a guess: 25
