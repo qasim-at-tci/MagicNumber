@@ -37,6 +37,25 @@ Game play:
 - Player has five (5) attempts to guess "magic" number.
 - Game provides feedback as to how close player's guess is to "magic" number, tracking attempts.
 
+Sample Output::
+-------------
+
+    Welcome to the "Magic" number game!
+    Try to guess the magic number (1-100) in 5 attempts or less."
+    
+    Enter a guess: 50
+    Lower...
+    Enter a guess: 25
+    Higher...
+    Enter a guess: 37
+    Higher...
+    Enter a guess: 43
+    Higher...
+    Enter a guess: 47
+    Higher...
+    Out of guesses! The magic number was: 49.
+    Play again? Y/N:
+
 Change Log
 ----------
 CHANGELOG_
