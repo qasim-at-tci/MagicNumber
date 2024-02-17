@@ -23,3 +23,20 @@ class MagicNumberGameGUI:
 
         self.status_label = tk.Label(master, text="")
         self.status_label.pack()
+
+    def submit_guess(self):
+        guess = self.entry.get()
+        try:
+            guess = int(guess)
+            self.check_guess(guess)
+        except ValueError:
+            messagebox.showerror("Error", "Input must be an integer.")
+
+def main():
+    root = tk.Tk()
+    app = MagicNumberGameGUI(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
+
