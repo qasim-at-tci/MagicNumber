@@ -34,9 +34,8 @@ class MagicNumberGameGUI:
 
 def main():
     root = tk.Tk()
-    app = MagicNumberGameGUI(root)
+    app = MagicNumberGUI(root)
     root.mainloop()
 
 if __name__ == "__main__":
     main()
-
