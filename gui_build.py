@@ -4,7 +4,7 @@ import random
 
 MAX_ATTEMPTS = 5
 
-class MagicNumberGameGUI:
+class MagicNumberGUI:
     def __init__(self, master):
         self.master = master
         self.master.title("Magic Number Game")
