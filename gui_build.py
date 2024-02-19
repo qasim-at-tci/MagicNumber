@@ -12,7 +12,7 @@ MAX_ATTEMPTS = 5
 class MagicNumberGUI:
     """A graphical user interface (GUI) for game.
 
-    Class provides user with a GUI for interacting with the game, incl.:
+    Class provides player with a GUI for interacting with the game, incl.:
     window with input field, button, label. Player has five (5) attempts to
     guess the "magic" number (randomly selected number between 1 and 100, inclusive).
     GUI provides feedback as to the player's guess.
@@ -47,6 +47,10 @@ class MagicNumberGUI:
         self.status_label.pack()
 
     def submit_guess(self):
+        """Retrieve player guess and attempt to convert to integer.
+        If input is valid, check guess, else prompt user to retry.
+        """
+
         guess = self.entry.get()
         try:
             guess = int(guess)
