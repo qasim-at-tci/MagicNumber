@@ -32,6 +32,23 @@ class MagicNumberGUI:
         except ValueError:
             messagebox.showerror("Error", "Input must be an integer.")
 
+    def check_guess(self, guess):
+        if guess < self.magic_number:
+            self.status_label.config(text="Higher...")
+        elif guess > self.magic_number:
+            self.status_label.config(text="Lower...")
+        else:
+            messagebox.showinfo("Congratulations!", "You guessed the magic number!")
+            self.reset_game()
+            return
+
+        self.attempts_remaining -= 1
+        if self.attempts_remaining == 0:
+            messagebox.showinfo("Game Over", f"Out of guesses! The magic number was {self.magic_number}.")
+            self.reset_game()
+
+        self.entry.delete(0, tk.END)
+
 def main():
     root = tk.Tk()
     app = MagicNumberGUI(root)
