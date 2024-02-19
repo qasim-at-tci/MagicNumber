@@ -66,7 +66,9 @@ class MagicNumberGUI:
 
         self.attempts_remaining -= 1
         if self.attempts_remaining == 0:
-            messagebox.showinfo("Game Over", f"Out of guesses! The magic number was {self.magic_number}.")
+            messagebox.showinfo("Game Over", 
+                f"Out of guesses! "
+                f"The magic number was {self.magic_number}.")
             self.reset_game()
 
         self.entry.delete(0, tk.END)
