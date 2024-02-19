@@ -49,6 +49,12 @@ class MagicNumberGUI:
 
         self.entry.delete(0, tk.END)
 
+    def reset_game(self):
+        self.magic_number = random.randint(1, 100)
+        self.attempts_remaining = MAX_ATTEMPTS
+        self.status_label.config(text="")
+        self.entry.delete(0, tk.END)
+
 def main():
     root = tk.Tk()
     app = MagicNumberGUI(root)
