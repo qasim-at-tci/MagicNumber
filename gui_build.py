@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+
+"""No-frills implementation of "magic" number guessing game in Python3.
+"""
+
 import tkinter as tk
 from tkinter import messagebox
 import random
