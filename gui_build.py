@@ -60,7 +60,7 @@ class MagicNumberGUI:
 
     def check_guess(self, guess):
 
-        """Evaluate player guess, providing feedback. 
+        """Evaluate player guess, providing feedback.
         Track number of attempts.
         Reset game if player can not guess number in number of attempts remaining is 0.
         Clear screen.
