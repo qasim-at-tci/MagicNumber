@@ -85,7 +85,7 @@ class MagicNumberGUI:
         self.entry.delete(0, tk.END)
 
     def reset_game(self):
-        """Set game to defaults.
+        """Reset game to defaults.
         """
 
         self.magic_number = random.randint(1, 100)
@@ -94,6 +94,8 @@ class MagicNumberGUI:
         self.entry.delete(0, tk.END)
 
 def main():
+    """Create the MagicNumberGUI class representing the game's interface.
+    """
     root = tk.Tk()
     app = MagicNumberGUI(root)
     root.mainloop()
