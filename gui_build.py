@@ -59,6 +59,13 @@ class MagicNumberGUI:
             messagebox.showerror("Error", "Input must be an integer.")
 
     def check_guess(self, guess):
+
+        """Evaluate player guess, providing feedback. 
+        Track number of attempts.
+        Reset game if player can not guess number in number of attempts remaining is 0.
+        Clear screen.
+        """
+
         if guess < self.magic_number:
             self.status_label.config(text="Higher...")
         elif guess > self.magic_number:
@@ -78,6 +85,9 @@ class MagicNumberGUI:
         self.entry.delete(0, tk.END)
 
     def reset_game(self):
+        """Set game to defaults.
+        """
+
         self.magic_number = random.randint(1, 100)
         self.attempts_remaining = MAX_ATTEMPTS
         self.status_label.config(text="")
