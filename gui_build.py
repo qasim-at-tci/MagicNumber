@@ -10,11 +10,11 @@ import random
 MAX_ATTEMPTS = 5
 
 class MagicNumberGUI:
-    """A graphical user interface (GUI) for guess the "magic" number game.
+    """A graphical user interface (GUI) for game.
 
     Class provides user with a GUI for interacting with the game, incl.:
     window with input field, button, label. Player has five (5) attempts to
-    guess the "magic" number (randomly selected number between 1 and 100, inclusive.
+    guess the "magic" number (randomly selected number between 1 and 100, inclusive).
     GUI provides feedback as to the player's guess.
 
     Attributes:
