@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-"""No-frills implementation of "magic" number guessing game in Python3.
+"""No-frills implementation of guess the "magic" number game in Python3.
 """
 
 import tkinter as tk
@@ -10,6 +10,23 @@ import random
 MAX_ATTEMPTS = 5
 
 class MagicNumberGUI:
+    """A graphical user interface (GUI) for guess the "magic" number game.
+
+    Class provides user with a GUI for interacting with the game, incl.:
+    window with input field, button, label. Player has five (5) attempts to
+    guess the "magic" number (randomly selected number between 1 and 100, inclusive.
+    GUI provides feedback as to the player's guess.
+
+    Attributes:
+        master (TK): Main window.
+        magic_number (int): Randomly generated number player attempts to guess.
+        attempts_remaining (int): Number of attempts remaining for player to guess.
+        label (Label): Display instructions/feedback to user.
+        entry (Entry): Input box for user to enter guess.
+        submit_button (Button): Button for user to submit guess.
+        status_label (Label): Display feedback/game status.
+    """
+
     def __init__(self, master):
         self.master = master
         self.master.title("Magic Number Game")
