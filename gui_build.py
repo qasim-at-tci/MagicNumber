@@ -97,7 +97,7 @@ def main():
     """Create the MagicNumberGUI class representing the game's interface.
     """
     root = tk.Tk()
-    app = MagicNumberGUI(root)
+    app = MagicNumberGUI(root)    # pylint: disable=unused-variable
     root.mainloop()
 
 if __name__ == "__main__":
