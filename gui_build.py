@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# pylint: disable=unused-variable
 
 """No-frills implementation of guess the "magic" number game in Python3.
 """
@@ -97,7 +98,7 @@ def main():
     """Create the MagicNumberGUI class representing the game's interface.
     """
     root = tk.Tk()
-    app = MagicNumberGUI(root)    # pylint: disable=unused-variable
+    app = MagicNumberGUI(root)
     root.mainloop()
 
 if __name__ == "__main__":
