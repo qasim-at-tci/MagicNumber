@@ -18,7 +18,7 @@ Magic Number :magic_wand::hash:
 
 "Magic" Number Guessing Game
 ----------------------------
-No frills implementation of guess the "magic" number game for Python 2 & 3.
+No frills implementation of guess the "magic" number game for Python3.
 
 Requirements
 ------------
@@ -28,7 +28,6 @@ Usage
 -----
 From a shell:
 ::
-    python magic_number.py
     python3 magic_number.py
 
 Game play:
