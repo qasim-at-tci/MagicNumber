@@ -1,10 +1,10 @@
 ============
-Magic Number :magic_wand::hash: 
+Magic Number :magic_wand::hash:
 ============
 .. image:: https://app.travis-ci.com/marshki/MagicNumber.svg?branch=master
     :target: https://app.travis-ci.com/marshki/MagicNumber
 
-.. image:: https://app.codacy.com/project/badge/Grade/dd75925d8a40461b9747da8c62bf3736    
+.. image:: https://app.codacy.com/project/badge/Grade/dd75925d8a40461b9747da8c62bf3736
    :target: https://www.codacy.com/gh/marshki/MagicNumber/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/MagicNumber&amp;utm_campaign=Badge_Grade
 
 .. image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
@@ -40,22 +40,7 @@ Sample Output
 -------------
 ::
 
-    Welcome to the "Magic" number game!
-    Try to guess the magic number (1-100) in 5 attempts or less.
-
-    Enter a guess: 50
-    Lower...
-    Enter a guess: 25
-    Higher...
-    Enter a guess: 37
-    Higher...
-    Enter a guess: 43
-    Higher...
-    Enter a guess: 47
-    Higher...
-    Out of guesses! The magic number was: 49.
-    Play again? Y/N:
-
+    
 Change Log
 ----------
 CHANGELOG_
