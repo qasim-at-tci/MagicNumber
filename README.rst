@@ -39,7 +39,7 @@ Game play:
 Sample Output
 -------------
 
-..image:: https://github.com/marshki/MagicNumber/blob/master/docs/opening.png
+.. image:: https://github.com/marshki/MagicNumber/blob/master/docs/opening.png
   :width: 400
 
 Change Log
