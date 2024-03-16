@@ -14,6 +14,10 @@ from tkinter import messagebox
 from magic_number import MagicNumberGUI
 
 class TestMagicNumberGUI(unittest.TestCase):
+
+    """Unit test class.
+    """
+
     def setUp(self):
         self.root = tk.Tk()
 
