@@ -31,7 +31,8 @@ class TestMagicNumberGUI(unittest.TestCase):
         app.magic_number = 50
         with patch.object(messagebox, "showinfo") as mock_showinfo:
             app.check_guess(50)
-            mock_showinfo.assert_called_once_with("Congratulations!", "You guessed the magic number!")
+            mock_showinfo.assert_called_once_with("Congratulations!",
+                                                  "You guessed the magic number!")
 
     def test_check_guess_out_of_guesses(self):
         app = MagicNumberGUI(self.root)
@@ -39,7 +40,8 @@ class TestMagicNumberGUI(unittest.TestCase):
         app.attempts_remaining = 1
         with patch.object(messagebox, "showinfo") as mock_showinfo:
             app.check_guess(25)
-            mock_showinfo.assert_called_once_with("Game Over", "Out of guesses! The magic number was 50.")
+            mock_showinfo.assert_called_once_with("Game Over",
+                                                  "Out of guesses! The magic number was 50.")
 
     def tearDown(self):
         self.root.destroy()
