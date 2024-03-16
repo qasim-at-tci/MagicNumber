@@ -38,8 +38,13 @@ Game play:
 
 Sample Output
 -------------
-
 .. image:: https://github.com/marshki/MagicNumber/blob/master/docs/opening.png
+  :width: 400
+
+.. image:: https://github.com/marshki/MagicNumber/blob/master/docs/feedback.png
+  :width: 400
+
+.. image:: https://github.com/marshki/MagicNumber/blob/master/docs/winning.png
   :width: 400
 
 Change Log
