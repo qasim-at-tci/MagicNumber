@@ -22,18 +22,24 @@ class TestMagicNumberGUI(unittest.TestCase):
         self.root = tk.Tk()
 
     def test_check_guess_lower(self):
+        """Test if guess is less than magic_number.
+        """
         app = MagicNumberGUI(self.root)
         app.magic_number = 50
         app.check_guess(25)
         self.assertEqual(app.status_label.cget("text"), "Higher...")
 
     def test_check_guess_higher(self):
+        """Test if guess is greater than magic_number.
+        """
         app = MagicNumberGUI(self.root)
         app.magic_number = 50
         app.check_guess(75)
         self.assertEqual(app.status_label.cget("text"), "Lower...")
 
     def test_check_guess_correct(self):
+        """Test if guess is equal to magic_number.
+        """
         app = MagicNumberGUI(self.root)
         app.magic_number = 50
         with patch.object(messagebox, "showinfo") as mock_showinfo:
@@ -42,6 +48,8 @@ class TestMagicNumberGUI(unittest.TestCase):
                                                   "You guessed the magic number!")
 
     def test_check_guess_out_of_guesses(self):
+        """Test if attempts remaining is equal to 1.
+        """
         app = MagicNumberGUI(self.root)
         app.magic_number = 50
         app.attempts_remaining = 1
