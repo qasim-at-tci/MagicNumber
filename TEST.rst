@@ -21,3 +21,46 @@ Magic Number :magic_wand::hash:
 .. |open source| image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
    :target: https://github.com/ellerbrock/open-source-badges/
    :alt: Open source
+
+"Magic" Number Guessing Game
+----------------------------
+No frills implementation of guess the "magic" number game for Python3.
+
+Requirements
+------------
+None.
+
+Usage
+-----
+From a shell:
+::
+    python3 magic_number.py
+
+Game play:
+
+- Game selects one (1) random "magic" number.
+- Player has five (5) attempts to guess "magic" number.
+- Game provides feedback as to how close player's guess is to "magic" number, tracking attempts.
+
+Sample Output
+-------------
+.. image:: https://github.com/marshki/MagicNumber/blob/master/docs/opening.png
+  :width: 400
+
+.. image:: https://github.com/marshki/MagicNumber/blob/master/docs/feedback.png
+  :width: 400
+
+.. image:: https://github.com/marshki/MagicNumber/blob/master/docs/winning.png
+  :width: 400
+
+Change Log
+----------
+CHANGELOG_
+
+.. _CHANGELOG: https://github.com/marshki/MagicNumber/blob/master/CHANGELOG.rst
+
+License
+-------
+LICENSE_
+
+.. _LICENSE: https://github.com/marshki/MagicNumber/blob/master/LICENSE
