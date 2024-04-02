@@ -2,6 +2,16 @@
 Magic Number :magic_wand::hash:
 ============
 
+|Generic badge|
+
+.. |Generic badge| image:: https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg
+   :target:
+
+|Generic badge|
+
+.. |Generic badge| image:: https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg
+   :target:
+
 .. image:: https://app.travis-ci.com/marshki/MagicNumber.svg?token=G1dPbFHNrXoE9jd7LsbN&branch=master
     :target: https://app.travis-ci.com/marshki/MagicNumber
 
