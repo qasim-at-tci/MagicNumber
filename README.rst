@@ -1,6 +1,7 @@
 ============
 Magic Number :magic_wand::hash:
 ============
+
 .. image:: https://app.travis-ci.com/marshki/MagicNumber.svg?branch=master
     :target: https://app.travis-ci.com/marshki/MagicNumber
 
