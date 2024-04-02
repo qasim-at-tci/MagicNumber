@@ -1,6 +1,6 @@
 Magic Number :magic_wand::hash:
 ========================================================================================
-|travis| |codacy| |python| |mit|
+|travis| |codacy| |python| |mit| |open source|
 
 .. |travis| image:: https://app.travis-ci.com/marshki/MagicNumber.svg?token=G1dPbFHNrXoE9jd7LsbN&branch=master
     :target: https://app.travis-ci.com/marshki/MagicNumber
@@ -18,6 +18,6 @@ Magic Number :magic_wand::hash:
    :target: https://lbesson.mit-license.org/
    :alt: MIT
 
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/m8h3uyvdb4ej2i02/branch/master?svg=true
-   :target: https://ci.appveyor.com/project/wjakob/nanogui/branch/master
-   :alt: Appveyor Build Status
+.. |open source| image:: https://badges.frapsoft.com/os/v3/open-source.svg?v=103
+   :target: https://github.com/ellerbrock/open-source-badges/
+   :alt: Open source
