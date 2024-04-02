@@ -2,7 +2,7 @@
 Magic Number :magic_wand::hash:
 ============
 
-   .. image:: https://app.travis-ci.com/marshki/MagicNumber.svg?token=G1dPbFHNrXoE9jd7LsbN&branch=master
+.. image:: https://app.travis-ci.com/marshki/MagicNumber.svg?token=G1dPbFHNrXoE9jd7LsbN&branch=master
     :target: https://app.travis-ci.com/marshki/MagicNumber
 
 .. image:: https://app.codacy.com/project/badge/Grade/dd75925d8a40461b9747da8c62bf3736
