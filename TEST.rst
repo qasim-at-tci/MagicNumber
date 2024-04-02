@@ -1,4 +1,4 @@
-NanoGUI
+Magic Number :magic_wand::hash:
 ========================================================================================
 |docs| |travis| |appveyor|
 
