@@ -2,6 +2,8 @@
 Magic Number :magic_wand::hash:
 ============
 
+.. rst-class:: horizontal-list
+
 |Generic badge|
 
 .. |Generic badge| image:: https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg
