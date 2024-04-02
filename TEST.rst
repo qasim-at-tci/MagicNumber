@@ -6,6 +6,10 @@ Magic Number :magic_wand::hash:
     :target: https://app.travis-ci.com/marshki/MagicNumber
     :alt: Travis
 
+.. |codacy| image:: https://app.codacy.com/project/badge/Grade/dd75925d8a40461b9747da8c62bf3736
+   :target: https://www.codacy.com/gh/marshki/MagicNumber/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marshki/MagicNumber&amp;utm_campaign=Badge_Grade
+   :alt: Codacy
+
 .. |docs| image:: https://readthedocs.org/projects/nanogui/badge/?version=latest
     :target: http://nanogui.readthedocs.org/en/latest/?badge=latest
     :alt: Docs
